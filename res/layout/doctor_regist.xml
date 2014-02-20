@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/logbg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+ 
+    <EditText
+        android:id="@+id/editTextUserName"
+        style="@drawable/shape"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/logintext"
+        android:fontFamily="Calibri"
+        android:hint="Username" >
+ 
+        <requestFocus />
+       
+    </EditText>
+    
+     <EditText
+         android:id="@+id/registeremail"
+         style="@drawable/shape"
+         android:layout_width="400dp"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+         android:layout_marginLeft="100dp"
+         android:background="@drawable/logintext"
+         android:fontFamily="Calibri"
+         android:hint="Email" >
+
+  <requestFocus />
+       
+    </EditText>
+ 
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@drawable/shape"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/logintext"
+        android:fontFamily="Calibri"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+  <requestFocus />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        style="@drawable/shape"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/logintext"
+        android:fontFamily="Calibri"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+ <requestFocus />
+     <RelativeLayout
+         android:id="@+id/relativeLayout1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="150dp"
+         android:layout_marginLeft="95dp" >
+
+    <Button
+        android:id="@+id/buttonCreateAccount"
+        style="@style/button_text"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/shape"
+        android:text="Create Account" />
+    </RelativeLayout>
+ 
+</LinearLayout>
+
+</RelativeLayout>

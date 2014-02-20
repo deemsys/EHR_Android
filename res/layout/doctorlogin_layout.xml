@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logbg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+  <TextView
+       android:id="@+id/Luname"
+       style="@style/CustomFontStyle1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="10dp"
+       android:layout_marginLeft="100dp"
+       android:layout_marginRight="5dp"
+       android:text="@string/username"
+       android:fontFamily="Calibri"
+       android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/Ledituname"
+        style="@drawable/shape"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/logintext"
+        android:fontFamily="Calibri"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/Lpass"
+        style="@style/CustomFontStyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/password"
+        android:fontFamily="Calibri"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/Leditpw"
+        style="@style/SpecialText"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="Calibri"
+        android:background="@drawable/logintext"
+        android:inputType="textPassword"
+        android:textColor="#000000" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="150dp" >
+
+    <Button
+        android:id="@+id/register"
+        style="@style/button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="157dp"
+        android:layout_toRightOf="@+id/login"
+        android:background="@drawable/shape"
+        android:fontFamily="Calibri"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/register"
+        android:layout_alignBottom="@+id/register"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="163dp"
+        android:background="@drawable/shape"
+        android:fontFamily="Calibri"
+        android:text="@string/login" />
+    
+    </RelativeLayout>
+
+
+
+</LinearLayout>
